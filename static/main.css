@@ -342,7 +342,7 @@
 
 .location {
     height: fit-content;
-    height: fit-content;
+    width: fit-content;
     background: #FAFAFA;
     border-radius: 8px;
     display: flex;
