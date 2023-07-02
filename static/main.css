@@ -341,7 +341,7 @@
 }
 
 .location {
-    width: 448px;
+    height: fit-content;
     height: fit-content;
     background: #FAFAFA;
     border-radius: 8px;
