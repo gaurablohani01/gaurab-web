@@ -771,9 +771,9 @@ form {
     .form {
         padding: 20px 10px !important;
     }
-.langauges-box {
-  width: 82% !important;
-}
+    .langauges-box {
+      width: 90% !important;
+    }
     .gaurab-a a {
         font-size: 0.7rem !important;
     }
