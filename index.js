@@ -18,6 +18,7 @@ $(document).ready(function() {
         let country = new Intl.DateTimeFormat().resolvedOptions().timeZone;
         document.querySelector('.year').innerHTML = ` ${year} - ${country}`;
         document.querySelector('.cuurentyear').innerHTML = ` ${year}`;
+        document.querySelector('.currentyear2').innerHTML = ` ${year}`;
     }
 
     updateTime();
