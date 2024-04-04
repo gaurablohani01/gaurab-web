@@ -1,26 +1,26 @@
-$(document).ready(function() {
-    function updateTime() {
-        let date = new Date();
-        let hour = date.getHours();
-        let min = date.getMinutes();
-        let month = date.getMonth();
-        let monthdate = date.getDate();
-        let year = date.getFullYear();
-        let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        let ampm = hour >= 12 ? 'PM' : 'AM';
-        hour = hour % 12;
-        if (hour == 0) {
-            document.querySelector('.date').innerHTML = ` ${months[month]} ${monthdate} || '12':${min} ${ampm}`;
-        } else {
-            document.querySelector('.date').innerHTML = ` ${months[month]} ${monthdate} || ${hour}:${min} ${ampm}`;
-        }
-
-        let country = new Intl.DateTimeFormat().resolvedOptions().timeZone;
-        document.querySelector('.year').innerHTML = ` ${year} - ${country}`;
-        document.querySelector('.currentyear').innerHTML = ` ${year}`;
-        document.querySelector('.currentyear2').innerHTML = ` ${year}`;
-    }
-
-    updateTime();
-    setInterval(updateTime, 1000);
-});
+   document.addEventListener('DOMContentLoaded', function() {
+            function updateTime() {
+                let date = new Date();
+                let hour = date.getHours();
+                let min = date.getMinutes();
+                let month = date.getMonth();
+                let monthdate = date.getDate();
+                let year = date.getFullYear();
+                let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                let ampm = hour >= 12 ? 'PM' : 'AM';
+                hour = hour % 12;
+                if (hour == 0) {
+                    document.querySelector('.date').innerHTML = `${months[month]} ${monthdate} || '12':${min} ${ampm}`;
+                } else {
+                    document.querySelector('.date').innerHTML = `${months[month]} ${monthdate} || ${hour}:${min} ${ampm}`;
+                }
+                
+                let country = new Intl.DateTimeFormat().resolvedOptions().timeZone;
+                document.querySelector('.year').innerHTML = `${year} - ${country}`;
+                document.querySelector('.cuurentyear').innerHTML = `${year}`;
+                document.querySelector('.currentyear2').innerHTML = `${year}`;
+            }
+            
+            updateTime();
+            setInterval(updateTime, 1000);
+        });
