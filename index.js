@@ -1,4 +1,4 @@
-function updateTime() {
+            function updateTime() {
     let date = new Date();
     let hour = date.getHours();
     let min = date.getMinutes();
@@ -22,3 +22,4 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+        });
