@@ -10,7 +10,7 @@
                 let ampm = hour >= 12 ? 'PM' : 'AM';
                 hour = hour % 12;
                 if (hour == 0) {
-                    document.querySelector('.date').innerHTML = `${months[month]} ${monthdate} || '12':${min} ${ampm}`;
+                    document.querySelector('.date').innerHTML = `${months[month]} ${monthdate} || 12:${min} ${ampm}`;
                 } else {
                     document.querySelector('.date').innerHTML = `${months[month]} ${monthdate} || ${hour}:${min} ${ampm}`;
                 }
