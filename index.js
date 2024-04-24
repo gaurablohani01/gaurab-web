@@ -11,9 +11,9 @@
                 let ampm = hour >= 12 ? 'PM' : 'AM';
                 hour = hour % 12;
                 if (hour == 0) {
-                    document.querySelector('.date').innerHTML = `${months[month]} ${monthdate} || 12:${min}:{sec} ${ampm}`;
+                    document.querySelector('.date').innerHTML = `${months[month]} ${monthdate} || 12:${min}:${sec} ${ampm}`;
                 } else {
-                    document.querySelector('.date').innerHTML = `${months[month]} ${monthdate} || ${hour}:${min}{sec} ${ampm}`;
+                    document.querySelector('.date').innerHTML = `${months[month]} ${monthdate} || ${hour}:${min}:${sec} ${ampm}`;
                 }
                 
                 let country = new Intl.DateTimeFormat().resolvedOptions().timeZone;
