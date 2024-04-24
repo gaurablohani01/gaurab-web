@@ -2,8 +2,8 @@
             function updateTime() {
                 let date = new Date();
                 let hour = date.getHours();
-                let min = date.getMinutes();
-                let sec=   date.getSeconds();
+                let min = date.getMinutes()
+                  let sec = date.getSeconds();
                 let month = date.getMonth();
                 let monthdate = date.getDate();
                 let year = date.getFullYear();
