@@ -236,6 +236,26 @@
 
 }
 
+#project {
+    padding-top: 130px;
+}
+
+.project {
+    padding: 1rem;
+    margin: 2.5rem auto;
+    display: grid;
+    place-items: center;
+}
+
+
+.project h2 {
+
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid hsl(348, 83%, 47%);
+
+}
+
 .container {
     padding: 10px 40px;
     position: relative;
@@ -560,6 +580,44 @@ form {
 
 
 
+.project-part {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.project-part::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.projecta {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.projecta::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #ee1810;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
 
 
 .education-part {
@@ -710,6 +768,26 @@ form {
 
 
 @media screen and (max-width: 600px) {
+    .project-part::after {
+        left: 31px;
+    }
+
+
+    .projecta {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+
+    .projecta::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+
 
     .education-part::after {
         left: 31px;
