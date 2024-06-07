@@ -7,6 +7,7 @@
 <style>
     body {
         font-family: Arial, sans-serif;
+        flex-direction: column;
         background-color: #f2f2f2;
         margin: 0;
         padding: 0;
@@ -38,7 +39,7 @@
 </style>
 </head>
 <body>
-<div id="loader" class="loader"></div>
+<div id="loader" class="loader"></div> <br>
 <h1 id="loadingText">Loading...</h1>
 
 <script>
@@ -47,7 +48,7 @@
         setTimeout(function() {
             hideLoader();
             redirect();
-        }, 3000);
+        }, 1000);
     };
 
     function showLoader() {
