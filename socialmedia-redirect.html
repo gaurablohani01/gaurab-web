@@ -28,23 +28,35 @@
         color: #666;
         margin-top: 20px;
     }
+
+    /* Loader animation */
+    .loader {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        animation: spin 2s linear infinite;
+        margin: 20px auto;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
 </style>
 </head>
 <body>
 <div class="container">
+    <div class="loader"></div>
     <h1>Redirecting...</h1>
-    <p>If you are not redirected automatically, <a href="https://needle.pythonanywhere.com/">click here</a>.</p>
+    <p>If you are not redirected automatically, <a href="https://needle.pythonanywhere.com/">Click Here</a>.</p>
 </div>
 
 <script>
-    // Change the URL below to the desired redirect destination
-    let redirectURL = "https://needle.pythonanywhere.com/";
-
-    // Change the time below (in milliseconds) to adjust the delay before redirect
-
     setTimeout(function() {
-        window.location.href = redirectURL;
-    } 1000);
+        window.location.href = https://needle.pythonanywhere.com/;
+    }, 1000);
 </script>
 </body>
 </html>
