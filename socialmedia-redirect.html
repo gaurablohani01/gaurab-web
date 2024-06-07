@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <script>
-        // JavaScript redirect
-        setTimeout(function() {
-            window.location.href = "https://needle.pythonanywhere.com/";
-        }); 
-    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Redirect Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    p {
+        color: #666;
+        margin-top: 20px;
+    }
+</style>
 </head>
 <body>
-    <p>This page is redirecting you to <a href="https://needle.pythonanywhere.com/">https://needle.pythonanywhere.com</a>.</p>
-    <p>If you are not redirected automatically, <a href="https://needle.pythonanywhere.com/">https://needle.pythonanywhere.com/"></a>.</p>
+<div class="container">
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected automatically, <a href="https://needle.pythonanywhere.com/">click here</a>.</p>
+</div>
+
+<script>
+    // Change the URL below to the desired redirect destination
+    let redirectURL = "https://needle.pythonanywhere.com/";
+
+    // Change the time below (in milliseconds) to adjust the delay before redirect
+
+    setTimeout(function() {
+        window.location.href = redirectURL;
+    });
+</script>
 </body>
 </html>
